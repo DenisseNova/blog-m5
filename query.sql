@@ -69,3 +69,19 @@ insert into Comentarios values(14, 5, 2, 'Este es el comentario 14', '2020-05-31
 insert into Comentarios values(15, 3, 4, 'Este es el comentario 15', '2020-06-28');
 
 select * from Comentarios;
+
+-- correo, id y post del usuario 5
+select usuario.id, usuario.email, post.titulo from usuario inner join post on usuario.id= post.usuario_id 
+where usuario.id=5;
+
+-- listar correo. id y el detalles de todos los comentarios NO REALIZADOS por usuario con correo usuario06@hotmail.com
+select usuario.email, comentarios.usuario_id, comentarios.texto from usuario right join comentarios on usuario.id=comentarios.usuario_id where usuario.email='usuario06@hotmail.com';
+
+-- listar los usuario que no ha publicado algun post
+select usuario.id from usuario left join post on usuario.id=post.usuario_id where post.id is null;
+
+-- listar todos los post, incluyendo quien no posee comentario
+select * from post full outer join comentarios on post.id=comentarios.post_id;
+
+-- listar todos los usuarios que publicaran un post en junio
+select * from usuario inner join post on usuario.id=post.usuario_id where post.fecha between '2020-06-01' and '2020-06-30'order by post.fecha asc; 
