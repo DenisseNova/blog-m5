@@ -51,3 +51,21 @@ insert into Post values(14, 8, 'Post 14: Esto es excelente', '2020-05-01');
 insert into Post values(15, 7, 'Post 15: Esto es malo', '2020-06-17');
 
 select * from Post;
+
+insert into Comentarios values(1, 6, 3, 'Este es el comentario 1', '2020-07-08');
+insert into Comentarios values(2, 2, 4, 'Este es el comentario 2', '2020-06-07');
+insert into Comentarios values(3, 4, 6, 'Este es el comentario 3', '2020-06-16');
+insert into Comentarios values(4, 13, 2, 'Este es el comentario 4', '2020-06-15');
+insert into Comentarios values(5, 6, 6, 'Este es el comentario 5', '2020-05-14');
+insert into Comentarios values(6, 3, 3, 'Este es el comentario 6', '2020-07-08');
+insert into Comentarios values(7, 1, 6, 'Este es el comentario 7', '2020-05-22');
+insert into Comentarios values(8, 7, 6, 'Este es el comentario 8', '2020-07-09');
+insert into Comentarios values(9, 13, 8, 'Este es el comentario 9', '2020-06-30');
+insert into Comentarios values(10, 6, 8, 'Este es el comentario 10', '2020-06-19');
+insert into Comentarios values(11, 1, 5, 'Este es el comentario 11', '2020-05-09');
+insert into Comentarios values(12, 15, 8, 'Este es el comentario 12', '2020-06-17');
+insert into Comentarios values(13, 9, 1, 'Este es el comentario 13', '2020-05-01');
+insert into Comentarios values(14, 5, 2, 'Este es el comentario 14', '2020-05-31');
+insert into Comentarios values(15, 3, 4, 'Este es el comentario 15', '2020-06-28');
+
+select * from Comentarios;
